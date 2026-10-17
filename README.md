@@ -1,18 +1,10 @@
 # Math Slayer: Competition Math Toolkit 🎯
 
-**Math Slayer** is a fast, algorithmic Python engine designed to efficiently solve challenging competitive mathematics problems, such as those found in the **AMC 8 and various Math Olympiads**.
+**Math Slayer** is a fast, algorithmic Python engine designed to efficiently solve challenging competitive mathematics problems, such as those found in the **AMC 8, AMC 10/12, and various Math Olympiads**.
 
 ---
 
-## 🚀 Features
-
-* **Prime Factorization & Divisors**: Computes complete canonical prime factorizations and counts total positive divisors using exponent products.
-* **Fast Modular Exponentiation**: Solves massive modular powers ($b^e \pmod{m}$) in logarithmic time ($O(\log e)$) to prevent memory overflows.
-* **Combinatorics Engine**: Calculates precise permutations ($_nP_r$) and combinations ($_nC_r$) without floating-point errors or integer overflow.
-
----
-
-## 🛠️ Requirements & Installation
+## 🚀 Features## 🛠️ Requirements & Installation
 
 This toolkit runs entirely on standard Python libraries, meaning **no external dependencies** are required. 
 
@@ -29,12 +21,27 @@ This toolkit runs entirely on standard Python libraries, meaning **no external d
 
 ---
 
-## 💻 How to Run
+## 💻 Quick Start & Usage
 
-Launch the interactive engine directly from your terminal:
+Here is a quick look at how you can utilize the `MathEngine` within your own scripts or your main entry point:
+```python
+from app import MathEngine
 
-```bash
-python app.py
+# 1. Get Prime Factorization & Divisor Count for 360
+n = 360
+print(f"Prime Factors of {n}:", MathEngine.prime_factors(n)) 
+# Output: {2: 3, 3: 2, 5: 1}
+
+print(f"Total Divisors of {n}:", MathEngine.count_divisors(n))
+# Output: 24 (since (3+1)*(2+1)*(1+1) = 24)
+
+# 2. Fast Modular Exponentiation: (7^100000) % 13
+print("Modular Power:", MathEngine.modular_power(7, 100000, 13))
+# Output: 9
+
+# 3. Combinatorics: Selecting 3 items out of 10
+print("Combinations (10C3):", MathEngine.combinations_count(10, 3))
+# Output: 120
 ```
 
 ---
@@ -48,4 +55,8 @@ python app.py
 
 ## 🤝 Contributing & Feedback
 If you are preparing for math competitions or love number theory, feel free to **star** this repository, open an **issue**, or submit a **pull request** to add new algorithmic tools!
-Use code with caution.
+
+
+* **Prime Factorization & Divisors**: Computes complete canonical prime factorizations and counts total positive divisors using exponent products.
+* **Fast Modular Exponentiation**: Solves massive modular powers (\(b^e \pmod{m}\)) in logarithmic time to prevent memory bottlenecks.
+* **Combinatorics Engine**: Calculates precise permutations (\(_nP_r\)) and combinations (\(_nC_r\)) without floating-point errors or integer overflow.
