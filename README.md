@@ -1,6 +1,6 @@
 # Math Slayer: Competition Math Toolkit 🎯
 
-**Math Slayer** is a fast, algorithmic Python engine designed to efficiently solve challenging competitive mathematics problems, such as those found in the **AMC 8, AMC 10/12, and various Math Olympiads**.
+**Math Slayer** is a fast, algorithmic Python engine designed to efficiently solve challenging competitive mathematics problems, such as those found in the **AMC 8 and various Math Olympiads**.
 
 ---
 
